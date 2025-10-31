@@ -31,7 +31,7 @@ jobs:
             git pull
             git stash pop
 
-            npm install --force 
+            sudo npm ci --legacy-peer-deps 
             npm run build
 
             echo "Deployment finished successfully."
