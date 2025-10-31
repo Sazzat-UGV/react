@@ -6,7 +6,7 @@ on:
       - main
 
 env:
-  PROJECT_PATH: "/var/www/project_name"
+  PROJECT_PATH: "/var/www/react"
 
 jobs:
   deploy:
@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
-          
+
 
           script: |
             set -e
