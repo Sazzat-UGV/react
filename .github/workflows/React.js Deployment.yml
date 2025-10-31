@@ -1,0 +1,37 @@
+name: Deploy React.js Project
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  PROJECT_PATH: "/var/www/project_name"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          port: 22
+
+          script: |
+            set -e
+            echo "Deployment started on server..."
+
+            cd ${{ env.PROJECT_PATH }}
+
+            git stash
+            git pull
+            git stash pop
+
+            npm install 
+            npm run build
+
+            echo "Deployment finished successfully."
