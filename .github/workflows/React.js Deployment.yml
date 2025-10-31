@@ -34,4 +34,5 @@ jobs:
             sudo npm ci --legacy-peer-deps 
             npm run build
 
+
             echo "Deployment finished successfully."
