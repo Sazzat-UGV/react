@@ -32,6 +32,7 @@ jobs:
             # git stash pop
 
             npm install 
+            
             npm run build
 
 
