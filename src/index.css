@@ -1,0 +1,124 @@
+@import url('./assets/fonts/fonts.css');
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* new line add */
+
+
+/* body{
+  background-color: #f6f6f6;
+  margin: 0;
+  padding: 0;
+} */
+
+
+/* ===================   jodit editor ============================  */
+.jodit,
+.jodit-container * {
+  /* background: #2e2d2d !important; */
+  /* color: wheat !important; */
+  border: none !important;
+
+}
+
+.jodit-react-container .jodit-wysiwyg {
+  min-height: 550px !important;
+}
+
+
+
+/*================ ant modal custom style start ============= */
+.ant-modal-content {
+  background-color: green !important;
+  padding: 0px !important;
+
+}
+
+.ant-modal-close-icon {
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.ant-modal-body {
+  background-color: white !important;
+  margin-top: -8px !important;
+}
+
+.anticon {
+  color: white !important;
+  font-weight: bold;
+}
+
+.ant-modal-body {
+  border-radius: 0 0 6px 6px !important;
+}
+
+.ant-form-item-required {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 18px !important;
+  content: "" !important;
+}
+
+.ant-tag-close-icon {
+  color: black !important;
+  padding-left: 20px;
+  font-size: 18px !important;
+}
+
+.ant-card-body {
+  padding: 0px;
+  border-radius: 10px !important;
+}
+
+
+/*================ ant modal custom style end ============= */
+
+.custom-search-height .ant-input {
+  height: 50px;
+  width: 300px;
+  font-size: 16px;
+  /* Optional: for better vertical alignment */
+}
+
+.custom-search-height .ant-btn {
+  height: 50px;
+  font-size: 16px;
+  /* Optional */
+  display: flex;
+  align-items: center;
+}
+
+
+/* Target the header row */
+.custom-table-header .ant-table-thead>tr>th {
+  background-color: #1890ff;
+  /* Your custom background color */
+  color: white;
+  /* Text color */
+  font-weight: bold;
+  /* Optional */
+}
+
+.ant-menu-title-content {
+  color: white;
+}
+
+
+
+
+/* Remove default Ant Design hover */
+.ant-table-tbody>tr:hover>td {
+  background: transparent !important;
+}
+
+/* Force  background */
+.ant-table-tbody>tr.highlight-row>td {
+  background: gray !important;
+}

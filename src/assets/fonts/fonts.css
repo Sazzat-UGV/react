@@ -1,0 +1,48 @@
+/* src/fonts.css */
+@font-face {
+    font-family: 'degularDisplay'; /* you can change custom name */
+    src:
+    url('./Degular/DegularDisplay-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'degularDisplay'; 
+    src:
+    url('./Degular/DegularDisplay-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: 'degularDisplay'; 
+    src:
+    url('./Degular/DegularDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'degularDisplay'; 
+    src:
+    url('./Degular/DegularDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+ 
+  
+
+
+  
+
+  /* =========== custom font use for tipp ============ */
+  /* 
+  1. font search and  download
+  2. assest/fonts/----> font ar name
+                  -----> font.css
+  3. index.css file 
+  @import url('./assets/fonts/fonts.css');
+
+  4. tailwind.config.js ------> add korban and same name diban jita font.css file a font ar name dican
+
+  */
